@@ -6,10 +6,6 @@ include "root" {
   path = find_in_parent_folders("root.hcl")
 }
 
-include "vpc" {
-  path = find_in_parent_folders("vpc/terragrunt.hcl")
-}
-
 dependencies {
   paths = ["../vpc"]
 }
